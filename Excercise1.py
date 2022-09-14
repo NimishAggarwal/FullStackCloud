@@ -1,10 +1,10 @@
 number1=int(input("Enter number 1\n"))
 number2=int(input("Enter number 2\n"))
-add=int(number1)+int(number2)
+add=int(number2)+int(number1)
 print("Addition is {}".format(add))
-power=number1**number2
+power=number2**number1
 print("power is ",power)
-print("Subtraction is ",int(number1-number2))
-print("multiplication is ",int(number1*number2))
-print("remainder is ",int(number2%number1))
-print("Quotient is ",number2/number1)
+print("Subtraction is ",int(number2-number1))
+print("multiplication is ",int(number2*number1))
+print("remainder is ",int(number1%number2))
+print("Quotient is ",number1/number2)
