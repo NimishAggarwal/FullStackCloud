@@ -1,0 +1,47 @@
+
+<!--
+
+html form for index page
+
+<form action = "" method = "post">
+	{% csrf_token %}
+	{{form }}
+	<input type="submit" value=Submit">
+</form>
+-->
+<!--
+
+html form for home_view
+
+<form action = "" method = "get">
+	<label for="your_name">Your name: </label>
+	<input id="your_name" type="text" name="your_name">
+	<input type="submit" value="OK">
+</form>
+-->
+<!--
+
+html form for home_view
+
+<form action = "" method = "POST">
+	{% csrf_token %}
+	<label for="your_name">Your name: </label>
+	<input id="your_name" type="text" name="your_name">
+	<input type="submit" value="OK">
+</form>
+-->
+
+<!--
+	
+	html form for home_view1
+
+	Adding enctype="multipart/form-data" to upload images or any other type of data in website
+
+-->
+<form method="POST" enctype="multipart/form-data" action="show/">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="Submit">
+	<a href="show/"><Button>Show</Button></a>
+	
+</form>

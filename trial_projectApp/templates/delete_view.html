@@ -1,0 +1,11 @@
+<div class="main">
+	<!-- Create a Form -->
+	<form method="POST">
+		<!-- Security token by Django -->
+		{% csrf_token %}
+		Are you want to delete this item ?
+        <!--we can also tag here, that we mentioned in views file, by {{tag}}-->
+		<input type="submit" value="Yes" />
+		<a href="/">Cancel </a>
+	</form>
+</div>
